@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embedded Systems Programming Course Enrollment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="home.html"> E-Learn</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Sign-Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Enroll in Embedded Systems Programming</h1>
+        <p>
+          Learn how to develop software for microcontrollers and embedded
+          systems. Join our course and start building real-world applications.
+        </p>
+      </div>
+    </section>
+
+    <!-- Course Info Section -->
+    <section class="course-info py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="Assests/em.png"
+              class="img-fluid"
+              alt="Embedded Systems Programming"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2>Course Overview</h2>
+            <p>
+              This course will teach you the fundamentals of embedded systems
+              programming. You'll work with hardware and software to create
+              real-world applications on microcontrollers and embedded systems.
+            </p>
+            <h4>Course Content:</h4>
+            <ul>
+              <li>Introduction to Embedded Systems</li>
+              <li>Working with Microcontrollers</li>
+              <li>C Programming for Embedded Systems</li>
+              <li>Interfacing Sensors and Actuators</li>
+              <li>Real-Time Operating Systems (RTOS)</li>
+              <li>Embedded Linux</li>
+            </ul>
+            <h3>Price: $199.99</h3>
+
+            <!-- Enrollment Form -->
+            <form action="/submit-enrollment" method="post">
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  name="fullName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Enroll Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 E-Learn. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
